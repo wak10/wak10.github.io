@@ -1,271 +1,84 @@
-* {
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>UTUTU store Home</title>
+    <meta name="description" content="これは模擬サイトです">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap">
+  </head>
 
-body {
-  margin: 0;
-  font-family: "Hiragino Kaku Gothic ProN";
-}
+  <body>
+    <header>
+      <div id="header-wrapper">
+        <div id="header-logo">
+          <a href="">
+            <img src="../image/UTU  U (1).png" alt="ロゴ">
+         </a>
+        </div>
+      
 
-a {
-  text-decoration: none;
-}
+        <nav id="menu">
+         <ul id="header-contents" class="header-link">
+           <li><a href="#">ALL</a></li>
+           <li><a href="#">NEW</a></li>
+           <li><a href="#">ONLINE STORE</a></li>
+           <li><a href="#shop">MAP</a></li>
+           <li>
+            <a href="https://www.instagram.com/" target="_blank">
+              <img class="icon" src="https://code-step.com/demo/html/portfolio1/img/icon-instagram.png" alt="インスタグラム">
+            </a>
+          </li>
+         </ul>
 
-.container {
-  width: 100%;
-  padding: 0 15px;
-  margin: 0 auto;
-}
+         <ul id="header-operation" class="header-link">
+           <li><a href="">LOGIN</a></li>
+           <li><a href="#form">CONTACT</a></li>
+         </ul>
+        </nav>
+      </div>
 
-.top-wrapper {
-  padding: 180px 0 100px 0;
-  background-image: url(top.png);
-  background-size: cover;
-  color: white;
-  text-align: center;
-}
+    </header>
 
-.top-wrapper h1 {
-  opacity: 0.7;
-  font-size: 45px;
-  letter-spacing: 5px;
-}
+    <main dir="main">
+      <div id="top">
+        <img src="https://images.unsplash.com/photo-1599598177991-ec67b5c37318?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1525&q=80" alt="">
+        <h1>BONSAI to the world</h1>
+    
+      
+      </div>
 
-.top-wrapper p {
-  opacity: 0.7;
-  font-size: 16px;
-  margin-bottom: 40px;
-}
+      <div id="shop">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13181.174801874944!2d133.987852!3d34.317539!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3553e9d1de75a155%3A0x122767bdf92e02f!2z44CSNzYxLTgwMjYg6aaZ5bed55yM6auY5p2-5biC6ay854Sh55S66ay854Sh!5e0!3m2!1sja!2sjp!4v1631196191693!5m2!1sja!2sjp" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>  
+      </div>
 
-.btn-wrapper {
-  text-align: center;
-}
+      <form action="#" method="post" id="form">
+        <dl>
+          <dt>NAME</dt>
+            <dd><input type="text"></dd>
+          <dt>E-mail</dt>
+            <dd><input type="text"></dd>
+          <dt>MASSEGE</dt>
+            <dd><textarea name="" id="" cols="" rows="10"></textarea></dd>
+        </dl>
 
-.btn-wrapper p {
-  margin-bottom: 20px;
-}
+        <div class="button"><input type="submit" value="送信"></div>
+      </form>
 
-.signup {
-  background-color: #239b76;
-}
+    </main>
 
-.facebook {
-  background-color: #3b5998;
-  margin-right: 10px;
-}
 
-.twitter {
-  background-color: #55acee;
-}
 
-.btn {
-  padding: 8px 24px;
-  color: white;
-  display: inline-block;
-  opacity: 0.8;
-  border-radius: 4px;
-  text-align: center;
-}
+    <footer id="footer" class="wrapper">
+      <p class="copyright">&copy; UTUTU</p>
+   </footer>
 
-.btn:hover {
-  opacity: 1;
-}
 
-.fa {
-  margin-right: 5px;
-}
 
-header {
-  height: 65px;
-  width: 100%;
-  background-color: rgba(34,49,52,0.9);
-  position :fixed;
-  top: 0;
-  z-index: 10;
-}
+  </body>     
 
-.logo {
-  width: 124px;
-  margin-top: 20px;
-}
-
-.header-left {
-  float: left;
-}
-
-.header-right {
-  float: right;
-  margin-right: -25px;
-}
-
-.header-right a {
-  line-height: 65px;
-  padding: 0 25px;
-  color: white;
-  display: block;
-  float: left;
-  transition: all 0.5s;
-}
-
-.header-right a:hover {
-  background-color: rgba(255,255,255,0.3);
-}
-
-.lesson-wrapper {
-  height: 580px;
-  padding-bottom: 80px;
-  padding-left: 5%;
-  padding-right: 5%;
-  background-color: #f7f7f7;
-  text-align: center;
-}
-
-.heading {
-  padding-top: 80px;
-  padding-bottom: 50px;
-  color: #5f5d60;
-}
-
-.heading h2 {
-  font-weight: normal;
-}
-
-.lesson {
-  float: left;
-  width: 25%;
-}
-
-.lesson-icon {
-  position: relative;
-}
-
-.lesson-icon p {
-  position: absolute;
-  top: 37%;
-  width: 100%;
-  color: white;
-}
-
-.text-contents {
-  width: 80%;
-  display: inline-block;
-  margin-top: 15px;
-  font-size: 13px;
-  color: #b3aeb5;
-}
-
-.heading h3 {
-  font-weight: normal;
-}
-
-.message-wrapper {
-  border-bottom: 1px solid #eee;
-  padding-bottom: 80px;
-  text-align: center;
-}
-
-.message {
-  padding: 15px 40px;
-  background-color: #5dca88;
-  cursor: pointer;
-  box-shadow: 0px 7px #1a7940;
-}
-
-.message:active {
-  position: relative;
-  top: 7px;
-  box-shadow: none;
-}
-
-footer img {
-  width: 125px;
-}
-
-footer p {
-  color: #b3aeb5;
-  font-size: 12px;
-}
-
-footer {
-  padding-top: 30px;
-  padding-bottom: 20px;
-}
-
-.menu-icon {
-  color: white;
-  float: right;
-  font-size: 25px;
-  padding: 21px 0;
-  display: none;
-}
-
-.clear {
-  clear: left;
-}
-
-@media all and (max-width: 1000px) {
-  .lesson {
-    width: 50%;
-    margin-bottom: 50px;
-  }
-
-  .lesson-wrapper {
-    height: 990px;
-  }
-
-  footer {
-    text-align: center;
-  }
-}
-
-@media all and (max-width: 750px) {
-  .top-wrapper h1 {
-    font-size: 32px;
-  }
-
-  .heading h2 {
-    font-size: 20px;
-  }
-}
-
-@media all and (max-width: 670px) {
-  .header-right {
-    display: none;
-  }
-
-  .menu-icon {
-    display: block;
-  }
-
-  .top-wrapper .btn {
-    width: 100%;
-  }
-
-  .twitter {
-    margin-top: 10px;
-  }
-
-  .top-wrapper {
-    text-align: left;
-  }
-
-  .top-wrapper h1 {
-    font-size: 24px;
-  }
-
-  .top-wrapper p {
-    font-size: 14px;
-  }
-
-  .lesson {
-    width: 100%;
-  }
-
-  .lesson-wrapper {
-    height: 1700px;
-  }
-
-  .message-wrapper .btn {
-    width: 100%;
-  }
-}
